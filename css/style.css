@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Geist:ital,wght@0,100..900;1,100..900&family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Libre+Caslon+Condensed:ital,wght@0,400..700;1,400..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+:root {
+  --color-primary-brand-1: #215C58;
+  --color-primary-brand-2: #0D2422;
+  --color-primary-light-1: #FAFCFC;
+  --color-primary-light-2: #F4F7F7;
+  --color-primary-light-3: #DFE7E6;
+  --color-primary-dark-1: #1D2B2A;
+  --color-primary-dark-2: #344645;
+  --color-primary-dark-3: #4E5E5D;
+  --font-title: "Josefin Sans", sans-serif;
+  --font-body:  "Geist", sans-serif;
+  --font-accent: "Space mono", monospace;
+
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body{
+    font-family: 1em;
+    line-height: 1.5;
+    background-color: var(--color-primary-brand-1);
+    color: var(--color-primary-light-2);
+    font-family: var(--font-body);
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: var(--font-title);
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-primary-light-1);
+    font-family: var(--font-body);
+}
+
+.btn-outline-success{
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-light-1);
+}
+.btn-outline-success:hover :not(.btn-check)+.btn:active{
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-brand-2);
+}
+
+.btn-primary{
+    background-color: var(--color-primary-dark-2);
+    color: var(--color-primary-light-1);
+}
+
+.btn-primary:hover{
+    background-color: var(--color-primary-light-1);
+    color: var(--color-primary-dark-1);
+    border-color: var(--color-primary-dark-1);
+
+}
+
+.nav-link, .navbar-nav, .nav-link.active{
+    color: var(--color-primary-light-1);
+}
+
+.navbar-brand{
+    font-weight: bold;
+     color: var(--color-primary-light-1);
+     font-family: var(--font-accent);
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: var(--color-primary-dark-1);
+}
+
+.navbar-brand > img{
+    width: 100px;
+    height: 100px;
+}
+
+.carousel-inner, .carousel-inner img{
+    height: 400px;
+    object-fit: cover;
+}
+
+footer{
+    background-color: var(--color-primary-brand-2);
+}
+
+footer img{
+    width: 100px;
+    height:100px;
+}
+
